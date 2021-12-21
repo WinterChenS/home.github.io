@@ -51,7 +51,7 @@ $(document).ready(function () {
 	 *
 	 */
 	// var url = 'https://bird.ioliu.cn/v1/?url=https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8';
-	var url = '/bingying/HPImageArchive.aspx?format=js&idx=0&n=8';
+	var url = 'http://codeby.cn/bingying/HPImageArchive.aspx?format=js&idx=0&n=8';
 	var imgUrls = JSON.parse(sessionStorage.getItem("imgUrls"));
 	var index = sessionStorage.getItem("index");
 	var $panel = $('#panel');
