@@ -38,8 +38,8 @@ $(document).ready(function () {
 		console.error(err);
 	})
 
-	
-	// var url = 'https://query.yahooapis.com/v1/public/yql' + 
+
+	// var url = 'https://query.yahooapis.com/v1/public/yql' +
     // '?q=' + encodeURIComponent('select * from json where url=@url') +
     // '&url=' + encodeURIComponent('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8') +
 	// '&format=json&callback=?';
@@ -48,7 +48,7 @@ $(document).ready(function () {
 	 * 获取Bing壁纸
 	 * 原先 YQL 已经无法提供服务了
 	 * 改用 JsonBird：https://bird.ioliu.cn/
-	 * 
+	 *
 	 */
 	// var url = 'https://bird.ioliu.cn/v1/?url=https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8';
 	var url = '/bingying/HPImageArchive.aspx?format=js&idx=0&n=8';
