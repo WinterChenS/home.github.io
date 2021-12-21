@@ -51,13 +51,13 @@ $(document).ready(function () {
 	 * 
 	 */
 	// var url = 'https://bird.ioliu.cn/v1/?url=https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8';
-	var url = 'https://www.bing.com/th?id=OHR.AtigunPassAurora_ZH-CN5486073819_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp';
+	var url = '/bingying/HPImageArchive.aspx?format=js&idx=0&n=8';
 	var imgUrls = JSON.parse(sessionStorage.getItem("imgUrls"));
 	var index = sessionStorage.getItem("index");
 	var $panel = $('#panel');
 	if(imgUrls == null){
 		imgUrls = new Array();
-		index = 0;		
+		index = 0;
 		$.get(url,function (result) {
 			images = result.images;
 			for (let i = 0; i < images.length; i++) {
@@ -82,7 +82,7 @@ $(document).ready(function () {
 		$panel.css("background-size", "cover");
 		sessionStorage.setItem("index",index);
 	}
-	
+
 	$(".iUp").each(function (i, e) {
 		iUp.up(e);
 	});
